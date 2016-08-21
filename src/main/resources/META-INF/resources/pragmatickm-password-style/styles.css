@@ -32,3 +32,8 @@ a.pragmatickm-password-password-link {
 	/* TODO: Find properly licensed images and include them in this styles package */
 	background-image: url(../images/password.gif);
 }
+li.pragmatickm-password-password-list-item,
+li.pragmatickm-password-password-table-list-item {
+	/* TODO: Find properly licensed images and include them in this styles package */
+	list-style-image: url('../images/list-item/16x16/password.gif');
+}

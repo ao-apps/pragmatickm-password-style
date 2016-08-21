@@ -23,6 +23,7 @@
 package com.pragmatickm.password.style;
 
 import com.pragmatickm.password.model.Password;
+import com.pragmatickm.password.model.PasswordTable;
 import com.semanticcms.core.servlet.SemanticCMS;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -38,6 +39,9 @@ public class PasswordStyleContextListener implements ServletContextListener {
 		semanticCMS.addCssLink("/pragmatickm-password-style/styles.css");
 		// Add link CSS class
 		semanticCMS.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
+		// Add list item CSS classes
+		semanticCMS.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
+		semanticCMS.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
 	}
 
 	@Override
