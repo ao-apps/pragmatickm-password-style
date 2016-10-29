@@ -3,6 +3,7 @@ Default style for passwords nested within [SemanticCMS](https://semanticcms.com/
 
 ## Project Links
 * [Project Home](https://pragmatickm.com/password/style/)
+* [Changelog](https://pragmatickm.com/password/style/changelog)
 * [API Docs](https://pragmatickm.com/password/style/apidocs/)
 * [Maven Repository](scpexe://private.cvs.aoindustries.com/var/maven2/pragmatickm)
 * [Git](ssh://private.cvs.aoindustries.com/var/git/pragmatickm-password-style)
