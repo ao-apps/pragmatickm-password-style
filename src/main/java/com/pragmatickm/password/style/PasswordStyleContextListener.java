@@ -1,6 +1,6 @@
 /*
  * pragmatickm-password-style - Default style for passwords nested within SemanticCMS pages and elements.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -24,24 +24,24 @@ package com.pragmatickm.password.style;
 
 import com.pragmatickm.password.model.Password;
 import com.pragmatickm.password.model.PasswordTable;
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for passwords in SemanticCMS.")
+@WebListener("Registers the styles for passwords in HtmlRenderer.")
 public class PasswordStyleContextListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		HtmlRenderer htmlRenderer = HtmlRenderer.getInstance(event.getServletContext());
 		// Add our CSS file
-		semanticCMS.addCssLink("/pragmatickm-password-style/styles.css");
+		htmlRenderer.addCssLink("/pragmatickm-password-style/styles.css");
 		// Add link CSS class
-		semanticCMS.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
+		htmlRenderer.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
 		// Add list item CSS classes
-		semanticCMS.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
-		semanticCMS.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
+		htmlRenderer.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
+		htmlRenderer.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
 	}
 
 	@Override
