@@ -40,7 +40,7 @@ along with pragmatickm-password-style.  If not, see <http://www.gnu.org/licenses
 		<description.html><![CDATA[Default style for passwords nested within <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages and elements.]]></description.html>
 	</properties>
 
-	<name>PragmaticKM 1 Password Style</name>
+	<name>PragmaticKM Password Style</name>
 	<url>https://pragmatickm.com/password/style/</url>
 	<description>Default style for passwords nested within SemanticCMS pages and elements.</description>
 	<inceptionYear>2013</inceptionYear>
