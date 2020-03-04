@@ -22,21 +22,29 @@
  */
 package com.pragmatickm.password.style;
 
+import com.aoindustries.web.resources.registry.Style;
+import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.pragmatickm.password.model.Password;
 import com.pragmatickm.password.model.PasswordTable;
 import com.semanticcms.core.servlet.SemanticCMS;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the styles for passwords in SemanticCMS.")
-public class Initializer implements ServletContextListener {
+@WebListener("Registers the styles for passwords in RegistryEE and SemanticCMS.")
+public class PasswordStyle implements ServletContextListener {
+
+	public static final Style PRAGMATICKM_PASSWORD = new Style("/pragmatickm-password-style/pragmatickm-password.css");
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(event.getServletContext());
+		ServletContext servletContext = event.getServletContext();
+
 		// Add our CSS file
-		semanticCMS.addCssLink("/pragmatickm-password-style/pragmatickm-password.css");
+		RegistryEE.get(servletContext).global.styles.add(PRAGMATICKM_PASSWORD);
+
+		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
 		// Add link CSS class
 		semanticCMS.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
 		// Add list item CSS classes
