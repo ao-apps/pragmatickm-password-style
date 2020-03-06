@@ -22,6 +22,7 @@
  */
 package com.pragmatickm.password.style;
 
+import com.aoindustries.web.resources.registry.Group;
 import com.aoindustries.web.resources.registry.Style;
 import com.aoindustries.web.resources.servlet.RegistryEE;
 import com.pragmatickm.password.model.Password;
@@ -35,6 +36,9 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for passwords in RegistryEE and SemanticCMS.")
 public class PasswordStyle implements ServletContextListener {
 
+	public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-password-style");
+
+	// TODO: Change to Group.Name once we have group-level ordering
 	public static final Style PRAGMATICKM_PASSWORD = new Style("/pragmatickm-password-style/pragmatickm-password.css");
 
 	@Override
@@ -42,7 +46,11 @@ public class PasswordStyle implements ServletContextListener {
 		ServletContext servletContext = event.getServletContext();
 
 		// Add our CSS file
-		RegistryEE.get(servletContext).global.styles.add(PRAGMATICKM_PASSWORD);
+		RegistryEE.Application.get(servletContext)
+			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
+			.getGroup(RESOURCE_GROUP)
+			.styles
+			.add(PRAGMATICKM_PASSWORD);
 
 		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
 		// Add link CSS class
