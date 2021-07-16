@@ -10,6 +10,12 @@
 
 [![Build](https://github.com/aoindustries/pragmatickm-password-style/workflows/Build/badge.svg?branch=1.x)](https://github.com/aoindustries/pragmatickm-password-style/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.pragmatickm/pragmatickm-password-style/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.pragmatickm/pragmatickm-password-style)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.pragmatickm%3Apragmatickm-password-style&metric=alert_status)](https://sonarcloud.io/dashboard?branch=1.x&id=com.pragmatickm%3Apragmatickm-password-style)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.pragmatickm%3Apragmatickm-password-style&metric=ncloc)](https://sonarcloud.io/component_measures?branch=1.x&id=com.pragmatickm%3Apragmatickm-password-style&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.pragmatickm%3Apragmatickm-password-style&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.pragmatickm%3Apragmatickm-password-style&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.pragmatickm%3Apragmatickm-password-style&metric=security_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.pragmatickm%3Apragmatickm-password-style&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.pragmatickm%3Apragmatickm-password-style&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=1.x&id=com.pragmatickm%3Apragmatickm-password-style&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=1.x&project=com.pragmatickm%3Apragmatickm-password-style&metric=coverage)](https://sonarcloud.io/component_measures?branch=1.x&id=com.pragmatickm%3Apragmatickm-password-style&metric=Coverage)
 
 Default style for passwords nested within [SemanticCMS](https://github.com/aoindustries/semanticcms) pages and elements.
 
