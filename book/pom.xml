@@ -71,20 +71,20 @@ along with pragmatickm-password-style.  If not, see <http://www.gnu.org/licenses
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/pragmatickm-password-style.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/pragmatickm-password-style.git</developerConnection>
-		<url>https://github.com/aoindustries/pragmatickm-password-style</url>
+		<connection>scm:git:git://github.com/ao-apps/pragmatickm-password-style.git</connection>
+		<developerConnection>scm:git:git@github.com:ao-apps/pragmatickm-password-style.git</developerConnection>
+		<url>https://github.com/ao-apps/pragmatickm-password-style</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/aoindustries/pragmatickm-password-style/issues</url>
+		<url>https://github.com/ao-apps/pragmatickm-password-style/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/aoindustries/pragmatickm-password-style/actions</url>
+		<url>https://github.com/ao-apps/pragmatickm-password-style/actions</url>
 	</ciManagement>
 
 	<repositories>
