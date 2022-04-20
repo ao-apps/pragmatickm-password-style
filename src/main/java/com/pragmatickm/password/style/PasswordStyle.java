@@ -37,32 +37,32 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Registers the styles for passwords in RegistryEE and SemanticCMS.")
 public class PasswordStyle implements ServletContextListener {
 
-	public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-password-style");
+  public static final Group.Name RESOURCE_GROUP = new Group.Name("pragmatickm-password-style");
 
-	// TODO: Change to Group.Name once we have group-level ordering
-	public static final Style PRAGMATICKM_PASSWORD = new Style("/pragmatickm-password-style/pragmatickm-password.css");
+  // TODO: Change to Group.Name once we have group-level ordering
+  public static final Style PRAGMATICKM_PASSWORD = new Style("/pragmatickm-password-style/pragmatickm-password.css");
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		ServletContext servletContext = event.getServletContext();
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    ServletContext servletContext = event.getServletContext();
 
-		// Add our CSS file
-		RegistryEE.Application.get(servletContext)
-			.activate(RESOURCE_GROUP) // TODO: Activate as-needed
-			.getGroup(RESOURCE_GROUP)
-			.styles
-			.add(PRAGMATICKM_PASSWORD);
+    // Add our CSS file
+    RegistryEE.Application.get(servletContext)
+      .activate(RESOURCE_GROUP) // TODO: Activate as-needed
+      .getGroup(RESOURCE_GROUP)
+      .styles
+      .add(PRAGMATICKM_PASSWORD);
 
-		SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
-		// Add link CSS class
-		semanticCMS.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
-		// Add list item CSS classes
-		semanticCMS.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
-		semanticCMS.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
-	}
+    SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
+    // Add link CSS class
+    semanticCMS.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
+    // Add list item CSS classes
+    semanticCMS.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
+    semanticCMS.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }
