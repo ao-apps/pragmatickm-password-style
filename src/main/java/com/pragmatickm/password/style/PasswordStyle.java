@@ -34,6 +34,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Registers the styles for passwords in {@link RegistryEE} and {@link SemanticCMS}.
+ */
 @WebListener("Registers the styles for passwords in RegistryEE and SemanticCMS.")
 public class PasswordStyle implements ServletContextListener {
 
@@ -50,15 +53,15 @@ public class PasswordStyle implements ServletContextListener {
     RegistryEE.Application.get(servletContext)
         .activate(RESOURCE_GROUP)// TODO: Activate as-needed
         .getGroup(RESOURCE_GROUP)
-        .styles
-        .add(PRAGMATICKM_PASSWORD);
+            .styles
+            .add(PRAGMATICKM_PASSWORD);
 
-    SemanticCMS semanticCMS = SemanticCMS.getInstance(servletContext);
+    SemanticCMS semanticCms = SemanticCMS.getInstance(servletContext);
     // Add link CSS class
-    semanticCMS.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
+    semanticCms.addLinkCssClass(Password.class, "pragmatickm-password-password-link");
     // Add list item CSS classes
-    semanticCMS.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
-    semanticCMS.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
+    semanticCms.addListItemCssClass(Password.class, "pragmatickm-password-password-list-item");
+    semanticCms.addListItemCssClass(PasswordTable.class, "pragmatickm-password-password-table-list-item");
   }
 
   @Override
