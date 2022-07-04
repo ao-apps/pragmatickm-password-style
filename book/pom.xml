@@ -36,15 +36,15 @@ along with pragmatickm-password-style.  If not, see <https://www.gnu.org/license
     <module.name>com.pragmatickm.password.style.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>pragmatickm-password-style</documented.artifactId>
-    <documented.name>PragmaticKM Password Style²</documented.name>
+    <documented.name>PragmaticKM Password Style</documented.name>
     <documented.description>Default style for passwords nested within SemanticCMS pages and elements.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>PragmaticKM Password Style² Book</name>
+  <name>PragmaticKM Password Style Book</name>
   <url>https://pragmatickm.com/password/style/</url>
-  <description>Documentation for PragmaticKM Password Style² in SemanticCMS format.</description>
+  <description>Documentation for PragmaticKM Password Style in SemanticCMS format.</description>
   <inceptionYear>2013</inceptionYear>
 
   <licenses>
