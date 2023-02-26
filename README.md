@@ -23,7 +23,7 @@ Default style for passwords nested within [SemanticCMS](https://github.com/ao-ap
 * [Project Home](https://pragmatickm.com/password/style/)
 * [Changelog](https://pragmatickm.com/password/style/changelog)
 * [API Docs](https://pragmatickm.com/password/style/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.pragmatickm/pragmatickm-password-style)
+* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.pragmatickm&q=a%3Apragmatickm-password-style)
 * [GitHub](https://github.com/ao-apps/pragmatickm-password-style)
 
 ## Contact Us
