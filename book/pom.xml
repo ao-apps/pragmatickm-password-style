@@ -41,6 +41,9 @@ along with pragmatickm-password-style.  If not, see <https://www.gnu.org/license
     <documented.artifactId>pragmatickm-password-style</documented.artifactId>
     <documented.name>PragmaticKM Password Style</documented.name>
     <documented.description>Default style for passwords nested within SemanticCMS pages and elements.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://pragmatickm.com/">PragmaticKM</a>
+/ <a target="${javadoc.target}" href="https://pragmatickm.com/password/">Password</a>
+/ <a target="${javadoc.target}" href="${project.url}">Style</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
     <!-- SonarQube -->
