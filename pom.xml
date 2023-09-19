@@ -39,6 +39,7 @@ along with pragmatickm-password-style.  If not, see <https://www.gnu.org/license
     <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://pragmatickm.com/">PragmaticKM</a>
 / <a target="${javadoc.target}" href="https://pragmatickm.com/password/">Password</a>
 / <a target="${javadoc.target}" href="${project.url}">Style</a>]]></javadoc.breadcrumbs>
+
     <description.html><![CDATA[Default style for passwords nested within <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages and elements.]]></description.html>
     <!-- TODO: Implement tests -->
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
