@@ -1,6 +1,6 @@
 /*
  * pragmatickm-password-style - Default style for passwords nested within SemanticCMS pages and elements.
- * Copyright (C) 2016, 2017, 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2020, 2021, 2022, 2025, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -29,10 +29,10 @@ import com.aoapps.web.resources.servlet.RegistryEE;
 import com.pragmatickm.password.model.Password;
 import com.pragmatickm.password.model.PasswordTable;
 import com.semanticcms.core.renderer.html.HtmlRenderer;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.annotation.WebListener;
 
 /**
  * Registers the styles for passwords in {@link RegistryEE} and {@link HtmlRenderer}.
